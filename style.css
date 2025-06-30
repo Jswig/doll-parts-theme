@@ -37,9 +37,28 @@
     --font-main: 'EB Garamond', Georgia, serif;
     --font-scale: 16px;
     --text-color: #6d5a66;
-    --text-color-secondary: #87717f;
+    --text-color-darker: #4d3d46;
+    --text-color-lighter: #87717f;
     --spacing: 1rem;
     --width: 88ch;
+}
+
+/* HTML Elements (alphabetical) */
+a {
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--text-color-lighter);
+}
+
+blockquote {
+    background-color: var(--blockquote-background-color);
+    border-radius: var(--border-radius);
+    font-style: italic;
+    padding: var(--spacing);
 }
 
 body {
@@ -56,67 +75,14 @@ body {
     word-wrap: break-word;
 }
 
-a {
-    font-style: bold;
-    color: var(--text-color);
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: var(--text-color-secondary);
-}
-
-nav a {
-    margin-right: var(--spacing);
-}
-
 button {
     cursor: pointer;
     margin: 0;
 }
 
-time {
-    font-family: monospace;
-    font-style: normal;
-}
-
-main {
-    line-height: 1.6;
-}
-
-table {
-    width: 100%;
-}
-
-hr {
-    border: 0;
-    border-top: 1px dashed;
-}
-
-img {
-    max-width: 100%;
-}
-
-blockquote {
-    background-color: var(--blockquote-background-color);
-    border-radius: var(--border-radius);
-    font-style: italic;
-    padding: var(--spacing);
-}
-
 footer {
     padding: var(--spacing) 0;
     text-align: center;
-}
-
-.title:hover {
-    text-decoration: none;
-}
-
-.title h1 {
-    font-family: bold;
-    font-size: 1.5rem;
 }
 
 h2 {
@@ -131,8 +97,54 @@ h4 {
     font-size: 1rem;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid;
+}
+
+img {
+    max-width: 100%;
+}
+
+li::marker {
+    content: "— ";
+}
+
+main {
+    line-height: 1.6;
+}
+
+nav a {
+    margin-right: var(--spacing);
+}
+
+strong {
+    font-style: bold;
+}
+
+table {
+    width: 100%;
+}
+
+time {
+    font-family: monospace;
+    font-style: normal;
+}
+
+/* CSS Classes (alphabetical) */
 .inline {
     width: auto !important;
+}
+
+.title {
+    color: var(--text-color-darker);
+    text-decoration: none;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    font-style: bold;
+    text-decoration: none;
 }
 
 /* blog post list */
