@@ -35,8 +35,7 @@
     --blockquote-background-color: #cdc7cb;
     --border-radius: 0.25em;
     --font-main: 'EB Garamond', Georgia, serif;
-    --font-scale: 12px;
-    --font-secondary: 'EB Garamond', Georgia, serif;
+    --font-scale: 16px;
     --text-color: #6d5a66;
     --text-color-secondary: #87717f;
     --spacing: 1rem;
@@ -58,13 +57,13 @@ body {
 }
 
 a {
+    color: var(--text-color);
     cursor: pointer;
     text-decoration: underline;
 }
 
 a:hover {
     color: var(--text-color-secondary);
-    text-decoration: underline;
 }
 
 a:visited {
@@ -119,19 +118,19 @@ footer {
 }
 
 .title h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 h3 {
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .inline {
