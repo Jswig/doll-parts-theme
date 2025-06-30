@@ -57,16 +57,13 @@ body {
 }
 
 a {
+    font-style: bold;
     color: var(--text-color);
     cursor: pointer;
     text-decoration: underline;
 }
 
 a:hover {
-    color: var(--text-color-secondary);
-}
-
-a:visited {
     color: var(--text-color-secondary);
 }
 
@@ -118,6 +115,7 @@ footer {
 }
 
 .title h1 {
+    font-family: bold;
     font-size: 1.5rem;
 }
 
